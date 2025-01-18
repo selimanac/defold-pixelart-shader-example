@@ -1,0 +1,840 @@
+name: "main"
+instances {
+  id: "pixelart_post_process"
+  prototype: "/pixelart/pixelart_post_process.go"
+}
+instances {
+  id: "camera"
+  prototype: "/components/gameobjects/camera.go"
+  component_properties {
+    id: "orbit_camera"
+    properties {
+      id: "target"
+      value: "/camera_orbit_target"
+      type: PROPERTY_TYPE_HASH
+    }
+    properties {
+      id: "angle_y"
+      value: "-45.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "angle_min"
+      value: "-30.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "angle_max"
+      value: "-30.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+}
+instances {
+  id: "water"
+  prototype: "/components/gameobjects/water.go"
+  position {
+    x: -2.0
+  }
+}
+instances {
+  id: "water1"
+  prototype: "/components/gameobjects/water.go"
+  position {
+    x: 2.0
+  }
+}
+instances {
+  id: "grass"
+  prototype: "/components/gameobjects/grass.go"
+  position {
+    x: -2.0
+    y: 0.5
+    z: 4.0
+  }
+}
+instances {
+  id: "grass1"
+  prototype: "/components/gameobjects/grass.go"
+  position {
+    x: 2.0
+    y: 0.5
+    z: 4.0
+  }
+}
+instances {
+  id: "dirt"
+  prototype: "/components/gameobjects/dirt.go"
+  position {
+    x: -2.0
+    y: 0.5
+    z: -4.0
+  }
+}
+instances {
+  id: "dirt1"
+  prototype: "/components/gameobjects/dirt.go"
+  position {
+    x: 2.0
+    y: 0.5
+    z: -4.0
+  }
+}
+instances {
+  id: "grass_small"
+  prototype: "/components/gameobjects/grass_small.go"
+  position {
+    x: 5.0
+    y: 1.5
+    z: 5.0
+  }
+}
+instances {
+  id: "grass_small1"
+  prototype: "/components/gameobjects/grass_small.go"
+  position {
+    x: 5.0
+    y: 2.5
+    z: 3.0
+  }
+}
+instances {
+  id: "grass2"
+  prototype: "/components/gameobjects/grass.go"
+  position {
+    x: 4.0
+    y: 5.5
+  }
+}
+instances {
+  id: "grass3"
+  prototype: "/components/gameobjects/grass.go"
+  position {
+    y: 4.5
+  }
+}
+instances {
+  id: "ladder"
+  prototype: "/components/gameobjects/ladder.go"
+  position {
+    x: 5.0
+    y: 2.5
+    z: 2.2
+  }
+}
+instances {
+  id: "bridge_1"
+  prototype: "/components/gameobjects/bridge_1.go"
+  position {
+    x: -2.0
+    y: 0.5
+  }
+  rotation {
+    y: 0.70710677
+    w: 0.70710677
+  }
+}
+instances {
+  id: "coin1"
+  prototype: "/components/gameobjects/coin.go"
+  position {
+    x: 3.0
+    y: 0.8
+    z: 4.0
+  }
+  rotation {
+    y: 0.70710677
+    w: 0.70710677
+  }
+}
+instances {
+  id: "coin2"
+  prototype: "/components/gameobjects/coin.go"
+  position {
+    x: 2.0
+    y: 0.8
+    z: 4.0
+  }
+  rotation {
+    y: 0.70710677
+    w: 0.70710677
+  }
+}
+instances {
+  id: "coin3"
+  prototype: "/components/gameobjects/coin.go"
+  position {
+    x: 1.0
+    y: 0.8
+    z: 4.0
+  }
+  rotation {
+    y: 0.70710677
+    w: 0.70710677
+  }
+}
+instances {
+  id: "sign"
+  prototype: "/components/gameobjects/sign.go"
+  position {
+    y: 0.5
+    z: 3.0
+  }
+  rotation {
+    y: -0.38268343
+    w: 0.9238795
+  }
+}
+instances {
+  id: "bee"
+  prototype: "/components/gameobjects/bee.go"
+  position {
+    x: 4.0
+    y: 3.0
+    z: 5.3
+  }
+  rotation {
+    y: -0.70710677
+    w: 0.70710677
+  }
+  scale3 {
+    x: 1.5
+    y: 1.5
+    z: 1.5
+  }
+}
+instances {
+  id: "fence"
+  prototype: "/components/gameobjects/fence.go"
+  position {
+    x: 6.0
+    y: 1.5
+    z: 5.0
+  }
+  rotation {
+    y: -0.70710677
+    w: 0.70710677
+  }
+}
+instances {
+  id: "fence1"
+  prototype: "/components/gameobjects/fence.go"
+  position {
+    x: 6.0
+    y: 2.5
+    z: 3.0
+  }
+  rotation {
+    y: -0.70710677
+    w: 0.70710677
+  }
+}
+instances {
+  id: "tree"
+  prototype: "/components/gameobjects/tree.go"
+  position {
+    x: 1.5
+    y: 4.5
+    z: -1.5
+  }
+}
+instances {
+  id: "crate"
+  prototype: "/components/gameobjects/crate.go"
+  position {
+    x: -0.3
+    y: 4.5
+    z: -1.5
+  }
+}
+instances {
+  id: "crate1"
+  prototype: "/components/gameobjects/crate.go"
+  position {
+    x: -1.5
+    y: 4.5
+    z: -1.5
+  }
+  rotation {
+    y: 0.38268343
+    w: 0.9238795
+  }
+}
+instances {
+  id: "crate2"
+  prototype: "/components/gameobjects/crate.go"
+  position {
+    x: -1.0
+    y: 5.5
+    z: -1.5
+  }
+  rotation {
+    x: -1.9045292E-15
+    y: 0.55076504
+    z: -5.2668623E-15
+    w: 0.83466035
+  }
+}
+instances {
+  id: "slime"
+  prototype: "/components/gameobjects/slime.go"
+  position {
+    x: -0.5
+    y: 4.5
+    z: 1.0
+  }
+  scale3 {
+    x: 2.0
+    y: 2.0
+    z: 2.0
+  }
+}
+instances {
+  id: "mushroom"
+  prototype: "/components/gameobjects/mushroom.go"
+  position {
+    x: 1.5
+    y: 4.5
+  }
+}
+instances {
+  id: "mushroom1"
+  prototype: "/components/gameobjects/mushroom.go"
+  position {
+    x: 0.8
+    y: 4.7
+    z: -0.3
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 0.5
+  }
+}
+instances {
+  id: "door"
+  prototype: "/components/gameobjects/door.go"
+  position {
+    y: 0.5
+    z: -4.3
+  }
+  rotation {
+    y: -0.70710677
+    w: 0.70710677
+  }
+}
+instances {
+  id: "cloud"
+  prototype: "/components/gameobjects/cloud.go"
+  position {
+    x: 8.0
+    y: 6.0
+    z: 1.0
+  }
+}
+instances {
+  id: "cloud1"
+  prototype: "/components/gameobjects/cloud.go"
+  position {
+    x: 11.0
+    y: 8.0
+    z: -2.0
+  }
+}
+instances {
+  id: "cloud2"
+  prototype: "/components/gameobjects/cloud.go"
+  position {
+    x: 9.0
+    y: 9.0
+    z: -5.0
+  }
+}
+instances {
+  id: "cannon"
+  prototype: "/components/gameobjects/cannon.go"
+  position {
+    x: 11.0
+    y: 8.2
+    z: -2.0
+  }
+}
+instances {
+  id: "spring"
+  prototype: "/components/gameobjects/spring.go"
+  position {
+    x: 5.0
+    y: 5.5
+    z: -1.0
+  }
+}
+instances {
+  id: "palet"
+  prototype: "/components/gameobjects/palet.go"
+  position {
+    x: -5.0
+    z: -5.0
+  }
+}
+instances {
+  id: "bomb"
+  prototype: "/components/gameobjects/bomb.go"
+  position {
+    x: -5.0
+    z: -5.0
+  }
+}
+instances {
+  id: "log_1"
+  prototype: "/components/gameobjects/log_1.go"
+  position {
+    y: 0.5
+    z: -3.0
+  }
+  rotation {
+    y: 0.70710677
+    w: 0.70710677
+  }
+}
+instances {
+  id: "log_2"
+  prototype: "/components/gameobjects/log_2.go"
+  position {
+    x: 1.0
+    z: -2.5
+  }
+}
+instances {
+  id: "log_"
+  prototype: "/components/gameobjects/log_1.go"
+  position {
+    y: 0.5
+    z: -5.5
+  }
+  rotation {
+    y: 0.70710677
+    w: 0.70710677
+  }
+}
+instances {
+  id: "log_3"
+  prototype: "/components/gameobjects/log_2.go"
+  position {
+    x: 3.0
+    z: -2.5
+  }
+}
+instances {
+  id: "log_4"
+  prototype: "/components/gameobjects/log_2.go"
+  position {
+    x: 1.0
+    z: -5.6
+  }
+}
+instances {
+  id: "log_5"
+  prototype: "/components/gameobjects/log_2.go"
+  position {
+    x: 3.0
+    z: -5.6
+  }
+}
+instances {
+  id: "log_6"
+  prototype: "/components/gameobjects/log_2.go"
+  position {
+    x: 3.7
+    z: -3.7
+  }
+  rotation {
+    y: 0.70710677
+    w: 0.70710677
+  }
+}
+instances {
+  id: "log_7"
+  prototype: "/components/gameobjects/log_1.go"
+  position {
+    x: 3.7
+    y: 0.5
+    z: -5.3
+  }
+  rotation {
+    y: 0.70710677
+    w: 0.70710677
+  }
+}
+instances {
+  id: "gem"
+  prototype: "/components/gameobjects/gem.go"
+  position {
+    x: 9.0
+    y: 10.0
+    z: -5.0
+  }
+  scale3 {
+    x: 2.0
+    y: 2.0
+    z: 2.0
+  }
+}
+instances {
+  id: "grass_1"
+  prototype: "/components/gameobjects/grass_1.go"
+  position {
+    x: 5.5
+    y: 5.5
+    z: 1.5
+  }
+  rotation {
+    y: -0.6914165
+    w: 0.7224564
+  }
+}
+instances {
+  id: "grass_2"
+  prototype: "/components/gameobjects/grass_2.go"
+  position {
+    x: 4.5
+    y: 2.5
+    z: 2.5
+  }
+  rotation {
+    y: -0.5190494
+    w: 0.85474426
+  }
+}
+instances {
+  id: "grass_3"
+  prototype: "/components/gameobjects/grass_3.go"
+  position {
+    x: 3.4
+    y: 0.5
+    z: 2.5
+  }
+  rotation {
+    y: -0.3826154
+    w: 0.9239077
+  }
+}
+instances {
+  id: "flower"
+  prototype: "/components/gameobjects/flower.go"
+  position {
+    x: 2.0
+    y: 0.5
+    z: 5.2
+  }
+}
+instances {
+  id: "flower1"
+  prototype: "/components/gameobjects/flower.go"
+  position {
+    x: 2.5
+    y: 0.5
+    z: 5.6
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 0.5
+  }
+}
+instances {
+  id: "flower2"
+  prototype: "/components/gameobjects/flower.go"
+  position {
+    x: 3.5
+    y: 0.5
+    z: 5.0
+  }
+  scale3 {
+    x: 0.7
+    y: 0.7
+    z: 0.7
+  }
+}
+instances {
+  id: "flower3"
+  prototype: "/components/gameobjects/flower.go"
+  position {
+    x: 2.5
+    y: 5.5
+    z: 1.5
+  }
+  scale3 {
+    x: 0.7
+    y: 0.7
+    z: 0.7
+  }
+}
+instances {
+  id: "cloud11"
+  prototype: "/components/gameobjects/cloud1.go"
+  position {
+    y: 3.0
+    z: -12.0
+  }
+}
+instances {
+  id: "cloud21"
+  prototype: "/components/gameobjects/cloud2.go"
+  position {
+    x: 3.0
+    y: 3.0
+    z: -9.0
+  }
+}
+instances {
+  id: "cloud3"
+  prototype: "/components/gameobjects/cloud3.go"
+  position {
+    x: 6.0
+    y: 5.0
+    z: -11.0
+  }
+}
+instances {
+  id: "rock1"
+  prototype: "/components/gameobjects/rock1.go"
+  position {
+    x: -3.5
+    y: 0.5
+    z: -5.5
+  }
+  rotation {
+    y: 0.64195895
+    w: 0.766739
+  }
+}
+instances {
+  id: "rock2"
+  prototype: "/components/gameobjects/rock2.go"
+  position {
+    x: -3.0
+    y: 0.5
+    z: 4.5
+  }
+  rotation {
+    y: -0.98925734
+    w: -0.14618437
+  }
+  scale3 {
+    x: 0.7
+    y: 0.7
+    z: 0.7
+  }
+}
+instances {
+  id: "rock"
+  prototype: "/components/gameobjects/rock1.go"
+  position {
+    x: -3.5
+    y: 0.5
+    z: 5.5
+  }
+}
+instances {
+  id: "rock3"
+  prototype: "/components/gameobjects/rock2.go"
+  position {
+    x: -3.0
+    y: 0.5
+    z: -5.5
+  }
+  rotation {
+    y: -0.98925734
+    w: -0.14618437
+  }
+  scale3 {
+    x: 0.7
+    y: 0.7
+    z: 0.7
+  }
+}
+instances {
+  id: "rock31"
+  prototype: "/components/gameobjects/rock3.go"
+  position {
+    x: -3.5
+    y: 0.5
+    z: -5.0
+  }
+  rotation {
+    x: 3.6175735E-15
+    y: -0.51805115
+    z: -8.4097634E-16
+    w: 0.85534966
+  }
+  scale3 {
+    x: 0.7
+    y: 0.7
+    z: 0.7
+  }
+}
+instances {
+  id: "rock4"
+  prototype: "/components/gameobjects/rock2.go"
+  position {
+    x: 1.5
+    y: 4.5
+    z: 1.5
+  }
+  rotation {
+    y: -0.87353337
+    w: 0.48676422
+  }
+  scale3 {
+    x: 0.7
+    y: 0.7
+    z: 0.7
+  }
+}
+instances {
+  id: "rock5"
+  prototype: "/components/gameobjects/rock2.go"
+  position {
+    x: 1.0
+    y: 4.5
+    z: 1.0
+  }
+  rotation {
+    y: -0.9994693
+    w: 0.03257555
+  }
+  scale3 {
+    x: 0.7
+    y: 0.7
+    z: 0.7
+  }
+}
+instances {
+  id: "character"
+  prototype: "/components/gameobjects/character.go"
+  position {
+    x: -2.0
+    y: 0.3
+  }
+  rotation {
+    y: 0.2565206
+    w: 0.9665388
+  }
+  scale3 {
+    x: 0.7
+    y: 0.7
+    z: 0.7
+  }
+}
+instances {
+  id: "chest"
+  prototype: "/components/gameobjects/chest.go"
+  position {
+    x: 2.0
+    y: 0.5
+    z: -4.0
+  }
+  rotation {
+    y: -0.70710677
+    w: 0.70710677
+  }
+}
+scale_along_z: 0
+embedded_instances {
+  id: "light_source"
+  data: ""
+  position {
+    x: -4.0
+    y: 23.0
+    z: 7.0
+  }
+}
+embedded_instances {
+  id: "light_target"
+  data: ""
+  position {
+    x: 10.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "scripts"
+  data: "components {\n"
+  "  id: \"main\"\n"
+  "  component: \"/scripts/main.script\"\n"
+  "}\n"
+  ""
+}
+embedded_instances {
+  id: "models"
+  children: "bee"
+  children: "bomb"
+  children: "bridge_1"
+  children: "cannon"
+  children: "character"
+  children: "chest"
+  children: "cloud"
+  children: "cloud1"
+  children: "cloud11"
+  children: "cloud2"
+  children: "cloud21"
+  children: "cloud3"
+  children: "coin1"
+  children: "coin2"
+  children: "coin3"
+  children: "crate"
+  children: "crate1"
+  children: "crate2"
+  children: "dirt"
+  children: "dirt1"
+  children: "door"
+  children: "fence"
+  children: "fence1"
+  children: "flower"
+  children: "flower1"
+  children: "flower2"
+  children: "flower3"
+  children: "gem"
+  children: "grass"
+  children: "grass1"
+  children: "grass2"
+  children: "grass3"
+  children: "grass_1"
+  children: "grass_2"
+  children: "grass_3"
+  children: "grass_small"
+  children: "grass_small1"
+  children: "ladder"
+  children: "log_"
+  children: "log_1"
+  children: "log_2"
+  children: "log_3"
+  children: "log_4"
+  children: "log_5"
+  children: "log_6"
+  children: "log_7"
+  children: "mushroom"
+  children: "mushroom1"
+  children: "palet"
+  children: "rock"
+  children: "rock1"
+  children: "rock2"
+  children: "rock3"
+  children: "rock31"
+  children: "rock4"
+  children: "rock5"
+  children: "sign"
+  children: "slime"
+  children: "spring"
+  children: "tree"
+  children: "water"
+  children: "water1"
+  data: ""
+}
+embedded_instances {
+  id: "camera_orbit_target"
+  data: ""
+  position {
+    y: 3.0
+  }
+}
