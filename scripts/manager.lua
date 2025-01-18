@@ -16,16 +16,16 @@ end
 
 function manager.init()
 	-- Init pixel-art post-process
-	-- pixelart.init(const.PIXEL_SETTINGS, nil, const.SHADOW_SETTINGS) --without shadows
+	-- pixelart.init(const.PIXEL_SETTINGS) --without shadows
 	pixelart.init(const.PIXEL_SETTINGS, const.LIGHT_SETTINGS, const.SHADOW_SETTINGS)
 
 	camera_zoom = go.get(const.CAMERA_ID, "orthographic_zoom")
 
-	-- Add listener for zoom
+	-- Window resize listener
 	window.set_listener(window_resized)
 
 
-	-- Just basic anims
+	--  Basic anims
 	for i = 1, 3 do
 		go.animate('/coin' .. i, 'position.y', go.PLAYBACK_LOOP_PINGPONG, 1.5, go.EASING_OUTBACK, 0.5)
 		go.animate('/coin' .. i, 'euler.y', go.PLAYBACK_LOOP_FORWARD, 270, go.EASING_LINEAR, 1.5)

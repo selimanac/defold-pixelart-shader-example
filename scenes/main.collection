@@ -1,9 +1,5 @@
 name: "main"
 instances {
-  id: "pixelart_post_process"
-  prototype: "/pixelart/pixelart_post_process.go"
-}
-instances {
   id: "camera"
   prototype: "/components/gameobjects/camera.go"
   component_properties {
@@ -717,8 +713,10 @@ instances {
     y: 0.3
   }
   rotation {
-    y: 0.2565206
-    w: 0.9665388
+    x: -1.7362426E-15
+    y: -0.047066275
+    z: -8.1404536E-16
+    w: 0.9988918
   }
   scale3 {
     x: 0.7
@@ -739,24 +737,11 @@ instances {
     w: 0.70710677
   }
 }
+instances {
+  id: "pixelart_post_process"
+  prototype: "/pixelart/pixelart_post_process.go"
+}
 scale_along_z: 0
-embedded_instances {
-  id: "light_source"
-  data: ""
-  position {
-    x: -4.0
-    y: 23.0
-    z: 7.0
-  }
-}
-embedded_instances {
-  id: "light_target"
-  data: ""
-  position {
-    x: 10.0
-    z: 1.0
-  }
-}
 embedded_instances {
   id: "scripts"
   data: "components {\n"
@@ -836,5 +821,22 @@ embedded_instances {
   data: ""
   position {
     y: 3.0
+  }
+}
+embedded_instances {
+  id: "light_source"
+  data: ""
+  position {
+    x: -4.0
+    y: 23.0
+    z: 7.0
+  }
+}
+embedded_instances {
+  id: "light_target"
+  data: ""
+  position {
+    x: 10.0
+    z: 1.0
   }
 }

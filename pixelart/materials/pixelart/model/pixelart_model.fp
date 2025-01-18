@@ -1,4 +1,4 @@
-#version 330
+#version 140
 
 in highp vec4 var_position;
 in mediump vec3 var_normal;
