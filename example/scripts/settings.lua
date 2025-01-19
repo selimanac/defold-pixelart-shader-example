@@ -18,7 +18,7 @@ settings.SHADOW_SETTINGS = {
 	projection_height = 14,
 	projection_near   = -80,
 	projection_far    = 80,
-	depth_bias        = 0.002, -- Usually it is 0.00002
+	depth_bias        = 0.002, --Usually, it's 0.00002 for perspective and 0.002 for orthographic projection.
 	shadow_opacity    = 0.4 -- Shadow opacity
 }
 
