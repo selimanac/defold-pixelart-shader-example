@@ -30,3 +30,7 @@ opengl_version_hint = 0
 [native_extension]
 app_manifest = /vulkan.appmanifest
 
+[input]
+game_binding = /example/input/game.input_bindingc
+use_accelerometer = 0
+
