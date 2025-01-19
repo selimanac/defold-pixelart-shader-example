@@ -1,0 +1,14 @@
+mesh: "/example/assets/models/water_4.glb"
+name: "water"
+materials {
+  name: "Non Metallic"
+  material: "/pixelart/materials/shadow/model/shadow_model_smooth.material"
+  textures {
+    sampler: "shadow_render_depth_texture"
+    texture: "/example/assets/textures/palette.png"
+  }
+  textures {
+    sampler: "shadow_render_diffuse_texture"
+    texture: "/example/assets/textures/palette.png"
+  }
+}

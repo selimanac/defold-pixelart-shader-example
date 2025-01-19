@@ -1,0 +1,5 @@
+script: "/example/render/pixelart_orthographic.render_script"
+render_resources {
+  name: "shadow_pass"
+  path: "/pixelart/materials/shadow/post-process/shadow_pass.material"
+}

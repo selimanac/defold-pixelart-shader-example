@@ -1,0 +1,10 @@
+mesh: "/example/assets/models/rock2.glb"
+name: "rock2"
+materials {
+  name: "Non Metallic"
+  material: "/pixelart/materials/pixelart/model/pixelart_model.material"
+  textures {
+    sampler: "tex0"
+    texture: "/example/assets/textures/palette.png"
+  }
+}
