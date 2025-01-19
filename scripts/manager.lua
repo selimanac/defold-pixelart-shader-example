@@ -19,11 +19,12 @@ function manager.init()
 	-- pixelart.init(const.PIXEL_SETTINGS) --without shadows
 	pixelart.init(const.PIXEL_SETTINGS, const.LIGHT_SETTINGS, const.SHADOW_SETTINGS)
 
-	camera_zoom = go.get(const.CAMERA_ID, "orthographic_zoom")
 
-	-- Window resize listener
-	window.set_listener(window_resized)
-
+	if go.exists(const.CAMERA_ID) then
+		camera_zoom = go.get(const.CAMERA_ID, "orthographic_zoom")
+		-- Window resize listener
+		window.set_listener(window_resized)
+	end
 
 	--  Basic anims
 	for i = 1, 3 do

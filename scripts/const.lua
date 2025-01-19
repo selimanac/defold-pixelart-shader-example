@@ -6,20 +6,20 @@ const.DISPLAY_HEIGHT  = sys.get_config_number("display.height")
 
 --  Pixel-art post process settings
 const.PIXEL_SETTINGS  = {
-	pixel_size = 2,              --Pixel size
+	pixel_size = 1,              --Pixel size
 	normal_edge_coefficient = 0.03, -- Normal edge for sharpening edges
-	depth_edge_coefficient = 0.25, --Depth edge for outline
+	depth_edge_coefficient = 0.2, --Depth edge for outline
 }
 
 -- Light orthographic projection settings for shadow
 -- Values are per-scene dependent and must be tweaked accordingly.
 const.SHADOW_SETTINGS = {
-	projection_width  = 12,
-	projection_height = 12,
-	projection_near   = -220,
-	projection_far    = 220,
-	depth_bias        = 0.0002, -- Usually it is 0.00002
-	shadow_opacity    = 0.4  -- Shadow opacity
+	projection_width  = 14,
+	projection_height = 14,
+	projection_near   = -80,
+	projection_far    = 80,
+	depth_bias        = 0.002, -- Usually it is 0.00002
+	shadow_opacity    = 0.4 -- Shadow opacity
 }
 
 const.LIGHT_SETTINGS  = {

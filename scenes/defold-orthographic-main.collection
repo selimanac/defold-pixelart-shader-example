@@ -1,32 +1,5 @@
 name: "main"
 instances {
-  id: "camera"
-  prototype: "/components/gameobjects/camera.go"
-  component_properties {
-    id: "orbit_camera"
-    properties {
-      id: "target"
-      value: "/camera_orbit_target"
-      type: PROPERTY_TYPE_HASH
-    }
-    properties {
-      id: "angle_y"
-      value: "-45.0"
-      type: PROPERTY_TYPE_NUMBER
-    }
-    properties {
-      id: "angle_min"
-      value: "-30.0"
-      type: PROPERTY_TYPE_NUMBER
-    }
-    properties {
-      id: "angle_max"
-      value: "-30.0"
-      type: PROPERTY_TYPE_NUMBER
-    }
-  }
-}
-instances {
   id: "water"
   prototype: "/components/gameobjects/water.go"
   position {
@@ -741,6 +714,47 @@ instances {
   id: "pixelart_post_process"
   prototype: "/pixelart/pixelart_post_process.go"
 }
+instances {
+  id: "camera_ortho"
+  prototype: "/orthographic/camera.go"
+  position {
+    y: 3.0
+  }
+  rotation {
+    x: -0.23911762
+    y: -0.3696438
+    z: -0.09904576
+    w: 0.8923991
+  }
+  component_properties {
+    id: "script"
+    properties {
+      id: "near_z"
+      value: "-50.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "far_z"
+      value: "50.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "zoom"
+      value: "30.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "projection"
+      value: "FIXED_AUTO"
+      type: PROPERTY_TYPE_HASH
+    }
+    properties {
+      id: "order"
+      value: "1.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+}
 scale_along_z: 0
 embedded_instances {
   id: "scripts"
@@ -815,13 +829,6 @@ embedded_instances {
   children: "water"
   children: "water1"
   data: ""
-}
-embedded_instances {
-  id: "camera_orbit_target"
-  data: ""
-  position {
-    y: 3.0
-  }
 }
 embedded_instances {
   id: "light_source"

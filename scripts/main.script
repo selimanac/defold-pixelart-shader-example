@@ -10,4 +10,7 @@ function init(self)
 	end
 
 	manager.init()
+
+	-- Billboard particle
+	particlefx.play('/spark#test')
 end

@@ -1,4 +1,4 @@
--- https://github.com/abadonna/defold-orbit-camera
+--REF: https://github.com/abadonna/defold-orbit-camera
 
 go.property("target", hash("/camera_orbit_target"))
 go.property("distance", 0)

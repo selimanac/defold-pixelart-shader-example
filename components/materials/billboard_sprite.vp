@@ -1,0 +1,23 @@
+// positions are in world space
+attribute mediump vec3 position;
+attribute mediump vec3 local_position;
+attribute mediump vec2 texcoord0;
+
+uniform mediump mat4 view_proj;
+uniform mediump mat4 proj;
+uniform mediump vec4 normal;
+
+varying mediump vec2 var_texcoord0;
+varying mediump vec4 var_position;
+varying mediump vec3 var_normal;
+
+void main()
+{
+
+    highp vec4 base = vec4(position.x - local_position.x, position.y, position.z - local_position.z, 1.0);
+    highp vec4 local_pos = vec4(position.x - base.x, position.y - base.y, 0.0, 0.0);
+    gl_Position = (view_proj * base) + (proj * local_pos);
+    var_texcoord0 = texcoord0;
+    var_position = vec4(position, 1.0);
+    var_normal = normalize(normal.xyz);
+}
