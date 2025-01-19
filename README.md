@@ -2,6 +2,9 @@
 
 Example project for [Defold pixel-art post-process](https://github.com/selimanac/defold-pixelart-shader) shader.
 
+Demo: https://selimanac.github.io/defold-pixelart-shader-example/
+
+
 Project contains custom render script based on build-in render script with camera component and [Björn Ritzl](https://x.com/bjornritzl)'s [defold-orthographic](https://github.com/britzl/defold-orthographic) library. 
 
 #### Custom render
